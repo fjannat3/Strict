@@ -1,6 +1,6 @@
 /*Global CSS */
 
-* {
+m {
     margin:0;
     padding:0;
     font-family: 'Lato', sans-serif;
@@ -17,11 +17,12 @@ span {
 
 /* Topbar Section */
 .topbar {
-    padding: 1.7% 0;
+    padding: 1.7%;
+    padding-bottom: 50px;
+    padding-left: 40px;
     background-color: hsla(0, 100%, 100%, 1);
     top:0;
     width: 100%;
-    z-index: 100%;
 }
 
 .topbar .logo {
@@ -81,6 +82,7 @@ span {
     height: 2px;
     background: #15a4fa;
     width: 500px;
+    margin-top: 20px;
 }
 
 
@@ -97,6 +99,8 @@ span {
     padding: 15px 35px;
     display: inline-block;
 }
+
+.hero-text .dropdown{margin-top: 30%;}
 
 /*about Section*/
 
@@ -183,9 +187,10 @@ span {
 
 .gallery-images {
     width: 100%;
+    margin: 40px 20px 0 20px;
 }
 
-.gallery-image1, .gallery-image3, .gallery-image4, .gallery-image5, .gallery-image6 {
+.gallery-image1, .gallery-image2, .gallery-image3, .gallery-image4, .gallery-image5, .gallery-image6 {
     position: relative;
     float: left;
     width: 32%;
@@ -198,7 +203,7 @@ span {
     width: 100%;
     /* height: 100%; */
     border-radius: 4px;
-    top:0;
+    top: 50%;
     left: 0;
     transition: all 0.25s linear;
 }
@@ -212,24 +217,9 @@ span {
 }
 
 
-.hober1 ul li, .hober2 ul li, .hober3 ul li, .hober4 ul li, .hober5 ul li, .hober6 ul {
+.hober1 ul li, .hober2 ul li, .hober3 ul li, .hober4 ul li, .hober5 ul li, .hober6 ul li{
     display: inline-block;
 }
-
-.portfolio .image-box .hober ul li img {}
-
-.portbox {
-float: left;
-
-width: 100%;
-
-background: #f6f9f9;
-
-padding: 2% 0;
-
-padding-bottom: 4%;
-}
-
 
 /*Subscription Section*/
 .subscription {
@@ -251,6 +241,7 @@ padding-bottom: 4%;
     font-size: 41px;
     font-weight: 400;
     color: #fff;
+    margin: 0;
 }
 
 .sub-header p{
@@ -277,10 +268,15 @@ padding-bottom: 4%;
     color: #fff;
 }
 
-.subscription form input[type="checkbox"] {
-    width: 6%;
-    margin: 0 0;
+.subscription form input {
     box-sizing: border-box;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 3%;
+    margin: 2%;
+    color: #fff;
 }
 
 .subscription form p {
@@ -288,16 +284,25 @@ padding-bottom: 4%;
     color: #fff;
     font-size: 14px;
 }
+.subscription .cbox{
+
+display: inline-block;
+
+width: 3%;
+}
 
 .subscription form input[type="button"] {
     float: right;
     background: transparent;
     border: 1px solid #15a4fa;
     color: #fff;
-    padding: 2% 7%;
+    padding: 1.5% 7%;
     margin-right: -2%;
     border-radius: 3px;
     transition: all 0.25s linear;
+    width: 20%;
+    margin-top: 0;
+    font-size: 18px;
 }
 
 .footer {
@@ -322,4 +327,20 @@ padding-bottom: 4%;
     margin: 0 .3%;
     margin-top: 1%;
     transition: all 0.25s linear;
+}
+.support img {
+
+float: right;
+
+background-color: #15a4fa;
+
+box-sizing: border-box;
+
+padding: 8px;
+
+margin: 0 .3%;
+
+height: 25px;
+
+width: 25px;
 }
